@@ -9,7 +9,7 @@
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard-url]: https://standardjs.com
 
-#### The buffer module from [node.js](https://nodejs.org), for the browser.
+#### The buffer module from [node.js](https://nodejs.org), for React-Native with native Base64. Forked from feross/buffer.
 
 [![saucelabs][saucelabs-image]][saucelabs-url]
 
@@ -39,7 +39,7 @@ instance methods, and class methods that are supported.
 To use this module directly (without browserify), install it:
 
 ```bash
-npm install buffer
+npm install react-native-buffer
 ```
 
 This module was previously called **native-buffer-browserify**, but please use **buffer**

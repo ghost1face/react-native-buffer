@@ -8,7 +8,7 @@
 
 'use strict'
 
-const base64 = require('base64-js')
+const base64 = require('react-native-fast-base64')
 const ieee754 = require('ieee754')
 const customInspectSymbol =
   (typeof Symbol === 'function' && typeof Symbol['for'] === 'function') // eslint-disable-line dot-notation
@@ -1116,6 +1116,13 @@ Buffer.prototype.slice = function slice (start, end) {
 
   const newBuf = this.subarray(start, end)
   // Return an augmented `Uint8Array` instance
+  Object.setPrototypeOf(newBuf, Buffer.prototype)
+
+  return newBuf
+}
+
+Buffer.prototype.subarray = function subarray (start, end) {
+  const newBuf = Uint8Array.prototype.subarray.call(this, start, end)
   Object.setPrototypeOf(newBuf, Buffer.prototype)
 
   return newBuf
