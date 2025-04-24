@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "ieee754": "^1.2.1",
-    "react-native-fast-base64": "^0.1.1"
+    "react-native-quick-base64": "^2.1.2"
   },
   "devDependencies": {
     "airtap": "^3.0.0",
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-fast-base64": "*"
+    "react-native-quick-base64": "*"
   },
   "homepage": "https://github.com/alexdonh/alexdonh",
   "jspm": {
